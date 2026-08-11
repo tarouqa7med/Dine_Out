@@ -6,3 +6,16 @@
             transform: translate(-50%, -50%) rotateZ(360deg);
       }
 }
+@keyframes delivery {
+      0% {
+            opacity: 0;
+            transform: translateY(0px);
+      } 15% {
+            opacity: 1;
+            transform: translateY(-35px);
+      } 30% {
+            transform: translateY(-10px) translateX(0px);
+      } 100% {
+            transform: translateX(500%);
+      }
+}

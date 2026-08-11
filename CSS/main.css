@@ -25,78 +25,76 @@ body header .navbar .container a.btn span {
       height: 2px;
       background-color: white;
 }
+.offcanvas {
+      background-color: red;
+}
 #carouselExampleCaptions {
       height: 100vh;
-      position: relative;
-}
-#carouselExampleCaptions::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #000000aa;
 }
 #carouselExampleCaptions .carousel-inner {
       height: 100%;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item {
       height: 100%;
+      position: relative;
+      overflow: hidden;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) {
+#carouselExampleCaptions .carousel-inner .carousel-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
-}
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(100%);
-      width: 100%;
+      filter: brightness(35%);
       transition-duration: 1s;
+      z-index: -1;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div {
-      position: relative;
-      z-index: 1;
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1)::before {
+      background-image: url("./../attachments/home-bg.jpg");
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active::before {
+      transform:  scale(115%);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
       top: 50%;
-      left: 0;
       transform: translateY(-50%);
+      height: fit-content;
+      z-index: 0;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div h5,
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div p,
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div a {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5,
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p,
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption a {
       opacity: 0;
       transform: scale(0);
       transition-duration: 1s;
       transition-delay: 1s;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active img {
-      transform: translate(-50%, -50%) scale(115%);
-}
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div h5, 
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div p, 
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption h5, 
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption p, 
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
       color: white;
       opacity: 1;
       transform: scale(1);
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div h5 {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption h5 {
       margin-bottom: 20px;
       font-family: 'DancingScript', cursive;
       font-size: 65px;
       transition-delay: 250ms;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div p {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption p {
       margin: auto;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
       font-family: 'Poppins', cursive;
       font-weight: lighter;
       width: 50%;
       transition-delay: 500ms;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
       margin: auto;
       padding: 8px 25px;
       display: block;
@@ -104,13 +102,15 @@ body header .navbar .container a.btn span {
       border: 2px solid #f1b601;
       border-radius: 50px;
       color: #f1b601;
+      font-family: 'Poppins', cursive;
+      letter-spacing: 2px;
       text-decoration: none;
       font-weight: bolder;
       position: relative;
       transition-delay: 750ms;
       overflow: hidden;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a::before {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a::before {
       content: "";
       position: absolute;
       top: 0;
@@ -120,36 +120,100 @@ body header .navbar .container a.btn span {
       background-color: #f1b601;
       transition-duration: 1s;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a:hover::before {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a:hover::before {
       right: 0;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a span {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a span {
       position: relative;
       transition-duration: 1s;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a:hover span {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a:hover span {
       color: white;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div p
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active {
-      background-size: 115%;
+
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2)::before {
+      background-image: url("./../attachments/slider-bg1.jpg");
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+      padding: 25px;
+      width: 50%;
+      background-color: blue;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      width: 300px;
+      transform: translateY(-300px);
+      transition-duration: 1s;
+      transition-delay: 500ms;
       position: relative;
-}
-#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
       z-index: 1;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) {
-      background: linear-gradient(#00000080), url("./../attachments/tm_bg.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+      transform: translateY(35px);
 }
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      transform: translateX(-1000px);
+      transition-duration: 1s;
+      transition-delay: 500ms;
+      font-size: 50px;
+      width: 250px;
+      margin: auto;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 h5 {
+      transform: translateX(0px);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 hr {
+      width: 100%;
+      background-color: #f1b601;
+      border: none;
+      border-radius: 5px;
+      height: 4px;
+      opacity: 1;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+      scale: 1;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
+      scale: 1;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a {
+      scale: 1;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a::before {
+      
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      width: 50%;
+      background-color: green;
+}
+
+
+
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3)::before {
+      background-image: url("./../attachments/tm_bg.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #carouselExampleCaptions .btns {
       position: absolute;
       top: 85%;
@@ -229,6 +293,7 @@ section.about {
 }
 .about .container .layout {
       display: flex;
+      align-items: center;
       margin-bottom: 50px;
 }
 .about .container .layout .div1 {
@@ -316,6 +381,7 @@ section.about {
 .about .container .layout .div2 {
       margin-top: 30px;
       width: 50%;
+      height: 250px;
       background-color: blue;
       display: flex;
       justify-content: center;
@@ -346,16 +412,35 @@ section.about {
 section.details {
       background-color: #000000aa;
       color: white;
-      padding-block: 50px;
 }
 .details .container {
       text-align: center;
+      position: relative;
+      padding: 0;
+      max-width: 100%;
+      overflow: hidden;
 }
-.details .container > p:first-of-type {
+.details .container .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      width: 100%;
+}
+.details .container .video video {
+      width: 100%;
+      height: 100%;
+}
+.details .container .layout {
+      position: relative;
+      height: 100%;
+      padding-block: 50px;
+}
+.details .container .layout p:first-of-type {
       font-size: 35px;
       font-family: 'DancingScript', cursive;
 }
-.details .container hr {
+.details .container .layout hr {
       height: 4px;
       background-color: #f1b601;
       opacity: 1;
@@ -364,39 +449,42 @@ section.details {
       margin: auto;
       margin-bottom: 20px;
 }
-.details .container > p:last-of-type {
+.details .container .layout p:last-of-type {
       font-family: 'Poppins', cursive;
       width: 85%;
       margin: auto;
       margin-bottom: 35px;
 }
-.details .container .layout {
+.details .container .layout .div {
       display: flex;
       gap: 25px;
+      width: 90%;
+      margin: auto;
 }
-.details .container .layout > div {
+.details .container .layout .div > div {
       padding: 15px;
-      background: linear-gradient(to right, #203a43, #0c191e);
+      background: linear-gradient(to right, #203a43bb, #0c191ebb);
       width: 25%;
       border-radius: 12px;
 }
-.details .container .layout > div .image {
+.details .container .layout .div > div .image {
       margin: auto;
       margin-bottom: 10px;
       width: 20%;
 }
-.details .container .layout > div p {
+.details .container .layout .div > div p {
       color: white;
       font-size: 20px;
       font-weight: bolder;
+      margin-bottom: 10px;
 }
-.details .container .layout > div p sup {
+.details .container .layout .div > div p sup {
       color: #f1b601;
       margin-left: 2px;
       font-size: 21px;
       font-weight: bolder;
 }
-.details .container .layout > div h4 {
+.details .container .layout .div > div h4 {
       font-size: 20px;
       font-family: 'DancingScript', cursive;
 }
@@ -728,6 +816,7 @@ section.booking {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      overflow: hidden;
 }
 .booking .container .heading {
       width: fit-content;
@@ -767,14 +856,18 @@ section.booking {
 .booking .container .layout {
       margin-top: 50px;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
+      flex-wrap: wrap;
 }
 .booking .container .layout .form {
       background-image: url("./../attachments/chef-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       background-color: #333;
       width: 40%;
-      padding: 20px;
+      padding: 25px;
       border-radius: 10px;
 }
 .booking .container .layout .form p {
@@ -787,7 +880,7 @@ section.booking {
 }
 .booking .container .layout .form form div {
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
 }
 .booking .container .layout .form form div label {
       padding-left: 10px;
@@ -799,7 +892,6 @@ section.booking {
 }
 .booking .container .layout .form form div:last-of-type label {
       padding-top: 10px;
-
       align-items: start;      
 }
 .booking .container .layout .form form div input {
@@ -808,6 +900,7 @@ section.booking {
       border: none;
       border-radius: 0 5px 5px 0;
       width: 100%;
+      font-family: 'Poppins', cursive;
 }
 .booking .container .layout .form form div:nth-child(3) input,
 .booking .container .layout .form form div:nth-child(4) input {
@@ -820,14 +913,68 @@ section.booking {
 }
 .booking .container .layout .form form div textarea {
       margin: 0;
+      padding: 10px;
       padding-left: 20px;
       resize: none;
       display: block;
       width: 100%;
-      height: 300px;
+      height: 200px;
       border: none;
       border-radius: 0 5px 5px 0;
 }
 .booking .container .layout .form form div textarea:focus {
       outline: none;
+}
+.booking .container .layout .form form button {
+      width: 100%;
+      padding: 10px;
+      background-color: transparent;
+      border: 2px solid #f1b601;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+}
+.booking .container .layout .form form button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #f1b601;
+      transition-duration: 1s;
+}
+.booking .container .layout .form form button:hover::before {
+      left: 0;
+}
+.booking .container .layout .form form button span {
+      position: relative;
+      color: #f1b601;
+      font-family: 'Poppins', cursive;
+      letter-spacing: 2px;
+      transition-duration: 1s;
+}
+.booking .container .layout .form form button:hover span {
+      color: white;
+}
+.booking .container .layout .delivery img {
+      animation: delivery 2.5s linear 0s infinite normal forwards;
+}
+
+footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      border-top-color: #2F2B63;
+      border-top-width: 2px;
+      border-top-style: solid;
+}
+footer p {
+      margin: 10px;
+      color: white;
+}
+footer p span {
+      font-weight: bolder;
+      letter-spacing: 2px;
 }
