@@ -463,20 +463,23 @@ section.details {
       justify-content: center;
       align-items: center;
       position: relative;
+      overflow: hidden;
 }
 .menu .container .layout .div .nav .nav-link::after {
       content: "";
       position: absolute;
       top: 50%;
-      right: 0;
+      right: -10px;
       transform: translate(0%, -50%);
-      width: 24px;
-      height: 24px;
-      border: 0px solid transparent;
-      transition-duration: 500ms;
+      width: 20px;
+      height: 20px;
+      border: 10px solid transparent;
+      border-right-color: white;
+      transition-duration: 250ms;
 }
 .menu .container .layout .div .nav .nav-link.active::after {
-      border: 12px solid transparent;
+      right: 0;
+      border: 10px solid transparent;
       border-right-color: white;
 }
 .menu .container .layout .div .nav .nav-link:first-of-type {
@@ -623,6 +626,9 @@ section.details {
       color: #f1b601;
 }
 
+section.chefs {
+      padding: 50px 0 150px 0;
+}
 .chefs .container .heading {
       width: fit-content;
       color: white;
@@ -663,8 +669,165 @@ section.details {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      background-color: red;
 }
 .chefs .container .layout .chef-item {
-      width: 250px;
+      width: 275px;
+}
+.chefs .container .layout .chef-item .details {
+      position: relative;
+}
+.chefs .container .layout .chef-item .details .image {
+      width: 100%;
+      transition-duration: .5s;
+}
+.chefs .container .layout .chef-item:hover .details .image {
+      transform: skewY(5deg);
+}
+.chefs .container .layout .chef-item .details .image img {
+      width: 100%;
+      border-radius: 10px;
+}
+.chefs .container .layout .chef-item .details .name-job {
+      padding: 15px 20px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      width: 90%;
+      border-radius: 10px;
+      transition-duration: .5s;
+}
+.chefs .container .layout .chef-item:hover .details .name-job {
+      bottom: 12%;
+      background: none;
+      background-color: #f1b601;
+}
+.chefs .container .layout .chef-item .details .name-job * {
+      margin: 0;
+      padding: 0;
+      transition-duration: .5s;
+}
+.chefs .container .layout .chef-item .details .name-job h4 {
+      color: #f1b601;
+      font-family: 'Poppins', cursive;
+      font-size: 22px;
+}
+.chefs .container .layout .chef-item .details .name-job p {
+      color: #C1C1C1;
+      font-family: 'DancingScript', cursive;
+}
+.chefs .container .layout .chef-item:hover .details .name-job * {
+      color: white;
+}
+
+section.booking {
+      padding-block: 50px;
+      background-color: red;
+      background-image: url("./../attachments/bg_wood.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.booking .container .heading {
+      width: fit-content;
+      color: white;
+}
+.booking .container .heading p {
+      margin: 0;
+      color: #f1b601;
+      font-family: 'DancingScript', cursive;
+      font-size: 24px;
+}
+.booking .container .heading h5 {
+      font-size: 35px;
+      font-family: 'Poppins', cursive;
+}
+.booking .container .heading .image {
+      margin: auto;
+      width: fit-content;
+      position: relative;
+}
+.booking .container .heading .image::before,
+.booking .container .heading .image::after {
+      content: "";
+      position: absolute;
+      top: 56%;
+      transform: translateY(-50%);
+      width: 125%;
+      height: 10%;
+      background-color: white;
+}
+.booking .container .heading .image::before {
+      right: 110%;
+}
+.booking .container .heading .image::after {
+      left: 110%;
+}
+.booking .container .layout {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+.booking .container .layout .form {
+      background-image: url("./../attachments/chef-bg.png");
+      background-color: #333;
+      width: 40%;
+      padding: 20px;
+      border-radius: 10px;
+}
+.booking .container .layout .form p {
+      color: #f1b601;
+      font-family: 'DancingScript', cursive;
+      font-size: 30px;
+}
+.booking .container .layout .form form {
+      display: block;
+}
+.booking .container .layout .form form div {
+      display: flex;
+      margin-bottom: 20px;
+}
+.booking .container .layout .form form div label {
+      padding-left: 10px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px 0 0 5px;
+}
+.booking .container .layout .form form div:last-of-type label {
+      padding-top: 10px;
+
+      align-items: start;      
+}
+.booking .container .layout .form form div input {
+      padding: 5px;
+      padding-left: 20px;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      width: 100%;
+}
+.booking .container .layout .form form div:nth-child(3) input,
+.booking .container .layout .form form div:nth-child(4) input {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 5px;
+}
+.booking .container .layout .form form div input:focus {
+      outline: none;
+}
+.booking .container .layout .form form div textarea {
+      margin: 0;
+      padding-left: 20px;
+      resize: none;
+      display: block;
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 0 5px 5px 0;
+}
+.booking .container .layout .form form div textarea:focus {
+      outline: none;
 }
