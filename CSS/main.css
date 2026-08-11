@@ -1,7 +1,670 @@
 
 body {
+      position: relative;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+body header .navbar {
+      height: 75px;
+      position: relative;
+}
+body header .navbar .container a img {
+      width: 100%;
+}
+body header .navbar .container a.btn {
+      background-color: transparent;
+      border: none;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+}
+body header .navbar .container a.btn span {
+      width: 35px;
+      height: 2px;
+      background-color: white;
+}
+#carouselExampleCaptions {
+      height: 100vh;
+      position: relative;
+}
+#carouselExampleCaptions::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000aa;
+}
+#carouselExampleCaptions .carousel-inner {
+      height: 100%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item {
+      height: 100%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(100%);
+      width: 100%;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div {
+      position: relative;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div h5,
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div p,
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) div a {
+      opacity: 0;
+      transform: scale(0);
+      transition-duration: 1s;
+      transition-delay: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active img {
+      transform: translate(-50%, -50%) scale(115%);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div h5, 
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div p, 
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a {
+      color: white;
+      opacity: 1;
+      transform: scale(1);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div h5 {
+      margin-bottom: 20px;
+      font-family: 'DancingScript', cursive;
+      font-size: 65px;
+      transition-delay: 250ms;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div p {
+      margin: auto;
+      margin-bottom: 35px;
+      font-family: 'Poppins', cursive;
+      font-weight: lighter;
+      width: 50%;
+      transition-delay: 500ms;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a {
+      margin: auto;
+      padding: 8px 25px;
+      display: block;
+      width: fit-content;
+      border: 2px solid #f1b601;
+      border-radius: 50px;
+      color: #f1b601;
+      text-decoration: none;
+      font-weight: bolder;
+      position: relative;
+      transition-delay: 750ms;
+      overflow: hidden;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: #f1b601;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a:hover::before {
+      right: 0;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a span {
+      position: relative;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a:hover span {
+      color: white;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div p
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active div a
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active {
+      background-size: 115%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+      z-index: 1;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) {
+      background: linear-gradient(#00000080), url("./../attachments/tm_bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+#carouselExampleCaptions .btns {
+      position: absolute;
+      top: 85%;
+      right: 5%;
+      width: 130px;
+}
+#carouselExampleCaptions .btns .carousel-control-prev,
+#carouselExampleCaptions .btns .carousel-control-next {
+      opacity: 1;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+#carouselExampleCaptions .btns button span {
+      transition-duration: 200ms;
+}
+#carouselExampleCaptions .btns button:hover span {
+      color: #f1b601;
+      transform: scale(115%);
+}
+
+section.Products {
+      height: 125px;
+      padding-block: 1px;
+      display: flex;
+      gap: 2px;
+      background-color: white;
+}
+.Products .col {
+      background: radial-gradient( #2c5364, #0f2027);
+}
+.Products .col p {
+      font-family: 'DancingScript', cursive;
+      color: white;
+      font-size: 25px;
+}
+
+section.about {
+      padding: 0;
+}
+.about .container .heading {
+      margin-top: 50px !important;
+      width: fit-content;
+      color: white;
+}
+.about .container .heading p {
+      margin: 0;
+      color: #f1b601;
+      font-family: 'DancingScript', cursive;
+      font-size: 24px;
+}
+.about .container .heading h5 {
+      font-size: 35px;
+      font-family: 'Poppins', cursive;
+}
+.about .container .heading .image {
+      margin: auto;
+      width: fit-content;
+      position: relative;
+}
+.about .container .heading .image::before,
+.about .container .heading .image::after {
+      content: "";
+      position: absolute;
+      top: 56%;
+      transform: translateY(-50%);
+      width: 125%;
+      height: 10%;
+      background-color: white;
+}
+.about .container .heading .image::before {
+      right: 110%;
+}
+.about .container .heading .image::after {
+      left: 110%;
+}
+.about .container .layout {
+      display: flex;
+      margin-bottom: 50px;
+}
+.about .container .layout .div1 {
+      padding-top: 30px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+}
+.about .container .layout .div1 > p:first-of-type {
+      margin: 0;
+      color: #f1b601;
+      font-family: 'DancingScript', cursive;
+      font-size: 30px;
+}
+.about .container .layout .div1 > p:nth-child(2) {
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Poppins', cursive;
+      color: white;
+}
+.about .container .layout .div1 > hr {
+      height: 5px;
+      background-color: #f1b601;
+      opacity: 1;
+      width: 50%;
+      border-radius: 5px;
+}
+.about .container .layout .div1 > p:last-of-type {
+      margin: 0;
+      margin-bottom: 16px;
+      font-family: 'Poppins', cursive;
+      font-size: 12px;
+      color: white;
+}
+.about .container .layout .div1 ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+}
+.about .container .layout .div1 ul li {
+      width: 50%;
+      margin-bottom: 20px;
+}
+.about .container .layout .div1 ul li div img {
+      width: 26px;
+}
+.about .container .layout .div1 ul li div p {
+      display: inline;
+      margin-left: 15px;
+      color: white;
+      font-family: 'DancingScript', cursive;
+}
+.about .container .layout .div1 a {
+      padding: 8px 25px;
+      width: fit-content;
+      border: 2px solid #f1b601;
+      border-radius: 30px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+}
+.about .container .layout .div1 a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #f1b601;
+      transition-duration: 1s;
+}
+.about .container .layout .div1 a:hover::before {
+      left: 0%;
+}
+.about .container .layout .div1 a span {
+      color: #f1b601;
+      transition-duration: 1s;
+      position: relative;
+      letter-spacing: 2px;
+}
+.about .container .layout .div1 a:hover span {
+      color: white;
+}
+.about .container .layout .div2 {
+      margin-top: 30px;
+      width: 50%;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("./../attachments/about-img.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      position: relative;
+}
+.about .container .layout .div2 .square {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      border: 5px solid #f1b601;
+      animation: square-spin 10s linear infinite normal forwards;
+}
+.about .container .layout .div2 p {
+      font-size: 32px;
+      font-family: 'DancingScript', cursive;
+      position: relative;
+}
+
+section.details {
+      background-color: #000000aa;
+      color: white;
+      padding-block: 50px;
+}
+.details .container {
+      text-align: center;
+}
+.details .container > p:first-of-type {
+      font-size: 35px;
+      font-family: 'DancingScript', cursive;
+}
+.details .container hr {
+      height: 4px;
+      background-color: #f1b601;
+      opacity: 1;
+      border: none;
+      border-radius: 5px;
+      margin: auto;
+      margin-bottom: 20px;
+}
+.details .container > p:last-of-type {
+      font-family: 'Poppins', cursive;
+      width: 85%;
+      margin: auto;
+      margin-bottom: 35px;
+}
+.details .container .layout {
+      display: flex;
+      gap: 25px;
+}
+.details .container .layout > div {
+      padding: 15px;
+      background: linear-gradient(to right, #203a43, #0c191e);
+      width: 25%;
+      border-radius: 12px;
+}
+.details .container .layout > div .image {
+      margin: auto;
+      margin-bottom: 10px;
+      width: 20%;
+}
+.details .container .layout > div p {
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+}
+.details .container .layout > div p sup {
+      color: #f1b601;
+      margin-left: 2px;
+      font-size: 21px;
+      font-weight: bolder;
+}
+.details .container .layout > div h4 {
+      font-size: 20px;
+      font-family: 'DancingScript', cursive;
+}
+
+
+.menu .container {
+      max-width: 100%;
+      padding-block: 50px;
+}
+.menu .container .heading {
+      width: fit-content;
+      color: white;
+}
+.menu .container .heading p {
+      margin: 0;
+      color: #f1b601;
+      font-family: 'DancingScript', cursive;
+      font-size: 24px;
+}
+.menu .container .heading h5 {
+      font-size: 35px;
+      font-family: 'Poppins', cursive;
+}
+.menu .container .heading .image {
+      margin: auto;
+      width: fit-content;
+      position: relative;
+}
+.menu .container .heading .image::before,
+.menu .container .heading .image::after {
+      content: "";
+      position: absolute;
+      top: 56%;
+      transform: translateY(-50%);
+      width: 125%;
+      height: 10%;
+      background-color: white;
+}
+.menu .container .heading .image::before {
+      right: 110%;
+}
+.menu .container .heading .image::after {
+      left: 110%;
+}
+.menu .container .layout {
+      margin-top: 35px;
+}
+.menu .container .layout .div .nav {
+      padding: 1px;
+      background-color: white;
+      border-radius: 6px;
+      display: flex;
+      gap: 1px;
+}
+.menu .container .layout .div .nav .nav-link {
+      padding: 25px 10px;
+      background: radial-gradient( #2c5364, #203a43, #0f2027);
+      color: white;
+      width: 85px;
+      border-radius: 0;
+      font-family: 'DancingScript', cursive;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+.menu .container .layout .div .nav .nav-link::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0%, -50%);
+      width: 24px;
+      height: 24px;
+      border: 0px solid transparent;
+      transition-duration: 500ms;
+}
+.menu .container .layout .div .nav .nav-link.active::after {
+      border: 12px solid transparent;
+      border-right-color: white;
+}
+.menu .container .layout .div .nav .nav-link:first-of-type {
+      border-radius: 5px 5px 0 0;
+}
+.menu .container .layout .div .nav .nav-link:last-of-type {
+      border-radius: 0 0 5px 5px;
+}
+.menu .container .layout .div .nav .nav-link img {
+      width: 65%;
+      transition-duration: 500ms;
+}
+.menu .container .layout .div .nav .nav-link.active img {
+      scale: 1.25;
+}
+.menu .container .layout .div .nav .nav-link p {
+      margin: 0;
+      margin-top: 10px;
+}
+.menu .container .layout .div .tab-content .tab-pane .group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item {
+      width: calc(25% - 15px);
+      color: white;
+      border: 3px solid #f1b601;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 1s;
+      overflow: hidden;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item:hover {
+      box-shadow:      0 0 25px 0 rgba(241, 182, 1, 0.5),
+                              0 5px rgba(241, 182, 1, 0.6),
+                              0 10px rgba(241, 181, 1, 0.5),
+                              0 15px rgba(241, 181, 1, 0.4),
+                              0 20px rgba(241, 181, 1, 0.3),
+                              0 25px rgba(241, 181, 1, 0.2),
+                              0 30px rgba(241, 181, 1, 0.1);
+      transform: translateY(-10px);
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item .image {
+      width: 85%;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item .image {
+      opacity: 0;
+      transform: scale(0%);
+      transition-duration: 1s;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item .image {
+      opacity: 1;
+      transform: scale(100%);
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item h3 {
+      font-family: 'DancingScript', cursive;
+      margin-bottom: 20px;
+      opacity: 0;
+      scale: 0;
+      transition-duration: 1s;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item h3 {
+      transition-duration: 1s;
+      opacity: 1;
+      scale: 1;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item ul {
+      padding: 0;
+      list-style: none;
+      width: 100%;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item ul li {
+      display: flex;
+      padding-left: 15px;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item ul li p {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition-duration: 1s;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li p {
+      transform: translateX(0%);
+      opacity: 1;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+      color: #c1c1c1;
+      padding-left: 50px;
+      transition-delay: 500ms;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+      margin-left: 50px;
+      gap: 5px;
+      position: relative;
+      opacity: 0;
+      transition-duration: 1s;
+      transition-delay: 500ms;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars {
+      opacity: 1;
+}
+.menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars i {
+      position: absolute;
+      font-size: 10px;
+      color: #f1b601;
+      transform: translateX(0px);
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(1) {
+      transform: translateX(0px);
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(2) {
+      transform: translateX(20px);
+      transition-duration: 500ms;
+      transition-delay: 1000ms;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(3) {
+      transform: translateX(40px);
+      transition-duration: 1000ms;
+      transition-delay: 1500ms;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(4) {
+      transform: translateX(60px);
+      transition-duration: 1500ms;
+      transition-delay: 2000ms;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(5) {
+      transform: translateX(80px);
+      transition-duration: 2000ms;
+      transition-delay: 2500ms;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+      color: #c1c1c1;
+      padding-left: 50px;
+      transition-delay: 500ms;
+}
+.menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type sup {
+      margin-left: 3px;
+      color: #f1b601;
+}
+
+.chefs .container .heading {
+      width: fit-content;
+      color: white;
+}
+.chefs .container .heading p {
+      margin: 0;
+      color: #f1b601;
+      font-family: 'DancingScript', cursive;
+      font-size: 24px;
+}
+.chefs .container .heading h5 {
+      font-size: 35px;
+      font-family: 'Poppins', cursive;
+}
+.chefs .container .heading .image {
+      margin: auto;
+      width: fit-content;
+      position: relative;
+}
+.chefs .container .heading .image::before,
+.chefs .container .heading .image::after {
+      content: "";
+      position: absolute;
+      top: 56%;
+      transform: translateY(-50%);
+      width: 125%;
+      height: 10%;
+      background-color: white;
+}
+.chefs .container .heading .image::before {
+      right: 110%;
+}
+.chefs .container .heading .image::after {
+      left: 110%;
+}
+.chefs .container .layout {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       background-color: red;
 }
-button {
-      background-color: white;
+.chefs .container .layout .chef-item {
+      width: 250px;
 }

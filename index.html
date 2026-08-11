@@ -11,52 +11,1791 @@
       <link rel="stylesheet" href="./CSS/global.css">
       <link rel="stylesheet" href="./CSS/main.css">
       <link rel="stylesheet" href="./CSS/responsive.css">
-      <link rel="icon" href="">
+      <link rel="icon" href="./attachments/icons/hamburger-icon.png">
       <title>Dine_Out Project</title>
 </head>
-<body>
+<body class="d-flex g-0 flex-column">
       
-
       <header>
-            <nav>
-
-                  <div>
-                        <img src="./attachments/logo.png" alt="">
-                  </div>
-
-                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <span></span><span></span><span></span>
-                  </button>
-                  
-                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <nav class="navbar bg-transparent position-absolute z-1 w-100">
+                  <div class="container">
+                        <a class="navbar-brand" href="#">
+                              <img src="./attachments/logo.png" alt="Bootstrap" width="30" height="24">
+                        </a>
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                        </a>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header">
                               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body">
-                              <div>
-                                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                              </div>
-                              <div class="dropdown mt-3">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                    Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                              <div class="offcanvas-body">
+                                    <div>
+                                          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                    </div>
+                                    <div class="dropdown mt-3">
+                                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                          Dropdown button
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                          </ul>
+                                    </div>
                               </div>
                         </div>
                   </div>
-
             </nav>
+            
+            <div id="carouselExampleCaptions" class="carousel slide">
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                              <img src="./attachments/home-bg.jpg" alt="">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <h5>Dine Out Restaurant</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt suscipit deserunt similique ab corporis dolores quia omnis adipisci et mollitia.</p>
+                                    <a href="#Menu"><span>Our Menu</span></a>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <div class="div1">
+                                          <img src="./attachments/pizza.png" alt="">
+                                          <h5>BUY GET ONE FREE</h5>
+                                          <hr>
+                                          <p>Aliquam laoreet orci quis risus vulputate tempor Quisque aliquetmattis mattis tortor nibh cursus lorem</p>
+                                          <p>+02 010 94 8 91 010</p>
+                                          <a href="#About">About Us</a>
+                                          <hr>
+                                    </div>
+                                    <div class="div2">
+                                          <img src="./attachments/pz.png" alt="">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="btns">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+                        </button>
+                  </div>
+            </div>
       </header>
 
+      <section class="Products">
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/pizza-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Pizza</p>
+            </div>
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/hamburger-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Burgers</p>
+            </div>
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/chicken-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Chicken</p>
+            </div>
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/taco-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Taco</p>
+            </div>
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/salad-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Salad</p>
+            </div>
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/fried-potatoes-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Fries</p>
+            </div>
+            <div class="col d-flex flex-column">
+                  <div class="image w-25 m-auto">
+                        <img class="w-100" src="./attachments/icons/drink-icon.png" alt="">
+                  </div>
+                  <p class="text-center">Drinks</p>
+            </div>
+      </section>
 
+      <section class="about">
+            <div class="container">
+                  <div class="heading text-center d-block m-auto">
+                        <p>Our Story</p>
+                        <h5>About Us</h5>
+                        <div class="image">
+                              <img src="./attachments/btm-style.png" alt="">
+                        </div>
+                  </div>
+                  <div class="layout">
+                        <div class="div1">
+                              <p>Who We Are ?</p>
+                              <p>BEST FOOD IDEAS & TRADITIONS <br>FROM THE WHOLE WORLD</p>
+                              <hr>
+                              <p>Back in 2000, three Kiwi guys including world-renowned chef Peter Moor set up the first Gloreya Burger Kitchen in Battersea, South London Burger Kitchen in</p>
+                              <ul>
+                                    <li>
+                                          <div>
+                                                <img src="./attachments/icons/check-icon.png" alt="">
+                                                <p>Quality products</p>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div>
+                                                <img src="./attachments/icons/check-icon.png" alt="">
+                                                <p>Fastest delivery</p>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div>
+                                                <img src="./attachments/icons/check-icon.png" alt="">
+                                                <p>World's best Chef</p>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div>
+                                                <img src="./attachments/icons/check-icon.png" alt="">
+                                                <p>Great Location</p>
+                                          </div>
+                                    </li>
+                              </ul>
+                              <a href="#Menu"><span>Our Menu</span></a>
+                        </div>
+                        <div class="div2">
+                              <div class="square"></div>
+                              <p>20+ Years Experience</p>
+                        </div>
+                  </div>
+            </div>
+      </section>
 
+      <section class="details">
+            <div class="container">
+                  <p>WE SERVE YOU THE BEST FOOD</p>
+                  <hr class="w-25">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                  <div class="layout">
+                        <div>
+                              <div class="image">
+                                    <img class="w-100" src="./attachments/icons/one-icon.png" alt="">
+                              </div>
+                              <p>20<sup>+</sup></p>
+                              <h4>Years Experience</h4>
+                        </div>
+                        <div>
+                              <div class="image">
+                                    <img class="w-100" src="./attachments/icons/food-icon.png" alt="">
+                              </div>
+                              <p>56<sup>+</sup></p>
+                              <h4>Menu Variant</h4>
+                        </div>
+                        <div>
+                              <div class="image">
+                                    <img class="w-100" src="./attachments/icons/restaurant-location-icon.png" alt="">
+                              </div>
+                              <p>12<sup>+</sup></p>
+                              <h4>Restaurant Branch</h4>
+                        </div>
+                        <div>
+                              <div class="image">
+                                    <img class="w-100" src="./attachments/icons/chef-icon.png" alt="">
+                              </div>
+                              <p>24<sup>+</sup></p>
+                              <h4>Professional Chef</h4>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <section class="menu">
+            <div class="container">
+                  <div class="heading text-center d-block m-auto">
+                        <p>Order Now</p>
+                        <h5>Our Menu</h5>
+                        <div class="image">
+                              <img src="./attachments/btm-style.png" alt="">
+                        </div>
+                  </div>
+                  <div class="layout">
+                        <div class="d-flex align-items-start div">
+                              <div class="nav flex-column nav-pills me-3 sections" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <div class="nav-link active" id="v-pills-Pizza-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Pizza" type="button" role="tab" aria-controls="v-pills-Pizza" aria-selected="true">
+                                          <img src="./attachments/icons/pizza-icon.png" alt="">
+                                          <p>Pizza</p>
+                                    </div>
+                                    <div class="nav-link" id="v-pills-Burgers-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Burgers" type="button" role="tab" aria-controls="v-pills-Burgers" aria-selected="false">
+                                          <img src="./attachments/icons/hamburger-icon.png" alt="">
+                                          <p>Burgers</p>
+                                    </div>
+                                    <div class="nav-link" id="v-pills-Chicken-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Chicken" type="button" role="tab" aria-controls="v-pills-Chicken" aria-selected="false">
+                                          <img src="./attachments/icons/chicken-icon.png" alt="">
+                                          <p>Chicken</p>
+                                    </div>
+                                    <div class="nav-link" id="v-pills-Taco-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Taco" type="button" role="tab" aria-controls="v-pills-Taco" aria-selected="false">
+                                          <img src="./attachments/icons/taco-icon.png" alt="">
+                                          <p>Taco</p>
+                                    </div>
+                                    <div class="nav-link" id="v-pills-Salad-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Salad" type="button" role="tab" aria-controls="v-pills-Salad" aria-selected="false">
+                                          <img src="./attachments/icons/salad-icon.png" alt="">
+                                          <p>Salad</p>
+                                    </div>
+                                    <div class="nav-link" id="v-pills-Fries-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Fries" type="button" role="tab" aria-controls="v-pills-Fries" aria-selected="false">
+                                          <img src="./attachments/icons/fried-potatoes-icon.png" alt="">
+                                          <p>Fries</p>
+                                    </div>
+                                    <div class="nav-link" id="v-pills-Drinks-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Drinks" type="button" role="tab" aria-controls="v-pills-Drinks" aria-selected="false">
+                                          <img src="./attachments/icons/drink-icon.png" alt="">
+                                          <p>Drinks</p>
+                                    </div>
+                              </div>
+                              <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-Pizza" role="tabpanel" aria-labelledby="v-pills-Pizza-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/pizza/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Pizza Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-Burgers" role="tabpanel" aria-labelledby="v-pills-Burgers-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/burger/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Burger Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-Chicken" role="tabpanel" aria-labelledby="v-pills-Chicken-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/chicken/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Chicken Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-Taco" role="tabpanel" aria-labelledby="v-pills-Taco-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/taco/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Taco Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-Salad" role="tabpanel" aria-labelledby="v-pills-Salad-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/salad/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Salad Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-Fries" role="tabpanel" aria-labelledby="v-pills-Fries-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/fries/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Fries Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-Drinks" role="tabpanel" aria-labelledby="v-pills-Drinks-tab" tabindex="0">
+                                          <div class="group">
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/1.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/2.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/3.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/4.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/5.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/6.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/7.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                                <div class="item">
+                                                      <div class="image m-auto">
+                                                            <img class="w-100" src="./attachments/menu/drink/8.png" alt="">
+                                                      </div>
+                                                      <h3 class="text-center">Drink Item</h3>
+                                                      <ul>
+                                                            <li>
+                                                                  <p><b>Size :</b></p>
+                                                                  <p>Regular</p>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Rate :</b></p>
+                                                                  <div class="stars fs-6 d-flex">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                  </div>
+                                                            </li>
+                                                            <li>
+                                                                  <p><b>Price :</b></p>
+                                                                  <p>40<sup>$</sup></p>
+                                                            </li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <section class="chefs">
+            <div class="container">
+                  <div class="heading text-center d-block m-auto">
+                        <p>Order Now</p>
+                        <h5>Our Menu</h5>
+                        <div class="image">
+                              <img src="./attachments/btm-style.png" alt="">
+                        </div>
+                  </div>
+                  <div class="layout">
+                        <div class="chef-item">
+                              <div class="details">
+                                    <img src="./attachments/team/Chef1.png" alt="">
+                                    <h2>Lucas Bennett</h2>
+                                    <p>Senior Chef</p>
+                              </div>
+                        </div>
+                        <div class="chef-item">
+                              <div class="details">
+                                    <img src="./attachments/team/Chef2.png" alt="">
+                                    <h2>Andre Smith</h2>
+                                    <p>Professor</p>
+                              </div>
+                        </div>
+                        <div class="chef-item">
+                              <div class="details">
+                                    <img src="./attachments/team/Chef3.png" alt="">
+                                    <h2>Nathaniel Hughes</h2>
+                                    <p>Master Chef</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
 
       <script src="./JS/Bootstrap/bootstrap.min.js"></script>
-      <script src="./JS/main.js"></script>
 </body>
 </html>
