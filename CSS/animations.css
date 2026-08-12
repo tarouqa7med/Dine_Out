@@ -6,6 +6,13 @@
             transform: rotate(-360deg);
       }
 }
+@keyframes image-top-bottom {
+      from {
+            transform: translateY(0px);
+      } to {
+            transform: translateY(-30px);
+      }
+}
 @keyframes square-spin {
       from {
             transform: translate(-50%, -50%) rotateZ(0deg);
