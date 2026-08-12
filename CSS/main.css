@@ -90,8 +90,7 @@ body header .navbar .container a.btn span {
       margin: auto;
       margin-bottom: 20px;
       font-family: 'Poppins', cursive;
-      font-weight: lighter;
-      width: 50%;
+      font-size: 14px;
       transition-delay: 500ms;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
@@ -135,21 +134,34 @@ body header .navbar .container a.btn span {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2)::before {
       background-image: url("./../attachments/slider-bg1.jpg");
 }
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) {
+      position: relative;
+}
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      right: unset;
+      bottom: unset;
+      transform: translate(-50%, -50%);
+      margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 90%;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
       padding: 25px;
       width: 50%;
-      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
       width: 300px;
       transform: translateY(-300px);
       transition-duration: 1s;
-      transition-delay: 500ms;
       position: relative;
       z-index: 1;
 }
@@ -157,11 +169,12 @@ body header .navbar .container a.btn span {
       transform: translateY(35px);
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
-      transform: translateX(-1000px);
+      transform: translateX(-500px);
       transition-duration: 1s;
-      transition-delay: 500ms;
-      font-size: 50px;
-      width: 250px;
+      font-size: 60px;
+      font-weight: bolder;
+      color: #E4C5A6;
+      width: 300px;
       margin: auto;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 h5 {
@@ -174,22 +187,85 @@ body header .navbar .container a.btn span {
       border-radius: 5px;
       height: 4px;
       opacity: 1;
+      width: 0;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 hr {
+      width: 100%;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+      font-family: 'Poppins', cursive;
+      font-size: 14px;
+      scale: 0;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 p:first-of-type {
       scale: 1;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
+      color: #f1b601;
+      font-size: 30px;
+      font-weight: bolder;
+      scale: 0;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 p:last-of-type {
       scale: 1;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a {
+      margin: auto;
+      padding: 8px 25px;
+      display: block;
+      width: fit-content;
+      border: 2px solid #f1b601;
+      border-radius: 50px;
+      color: #f1b601;
+      font-family: 'Poppins', cursive;
+      letter-spacing: 2px;
+      text-decoration: none;
+      font-weight: bolder;
+      position: relative;
+      overflow: hidden;
+      scale: 0;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 a {
       scale: 1;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a::before {
-      
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: #f1b601;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a:hover::before {
+      right: 0;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a span {
+      position: relative;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 a:hover span {
+      color: white;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
       width: 50%;
-      background-color: green;
+      transition-duration: 1s;
+      transform: translateY(-500px);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div2 {
+      transform: translateY(0px);
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 img {
+      width: 95%;
+      transition-duration: 1s;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div2 img {
+      animation: spin-image 8s linear 0s infinite normal forwards;
 }
 
 
