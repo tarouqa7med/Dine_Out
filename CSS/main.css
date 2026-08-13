@@ -2,7 +2,6 @@
 body {
       position: relative;
       background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-      overflow: hidden;
 }
 body header .navbar {
       height: 75px;
