@@ -382,7 +382,6 @@
             width: 65px;
       }
       section.Products {
-            overflow-x: scroll;
             width: 100%;
       }
       .Products .col {
