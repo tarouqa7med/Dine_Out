@@ -1,9 +1,359 @@
 
 @media screen and (max-width: 370.98px) {
-
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+            width: 80%;
+            padding: 0;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+            width: 250px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+            transform: translateY(30px);
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+            width: 80%;
+            font-size: 45px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+            font-size: 12px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+            display: none;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+            display: none;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+            width: 80%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+            font-size: 25px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
+            width: 75%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+            font-size: 12px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+            justify-content: space-between;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+            width: 40px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
+            font-size: 20px;
+      }
+      .Products .col {
+            padding-inline: 20px;
+      }
+      .Products .col .image {
+            width: 35px;
+      }
+      .Products .col p {
+            font-size: 20px;
+      }
+      .about .container .layout {
+            flex-direction: column;
+      }
+      .about .container .layout .div1 {
+            width: 100%;
+      }
+      .about .container .layout .div1 > p:nth-child(2) {
+            font-size: 25px;
+      }
+      .about .container .layout .div1 > p:last-of-type {
+            font-size: 16px;
+      }
+      .about .container .layout .div2 {
+            width: 100%;
+      }
+      .details .container .video {
+            display: none;
+      }
+      .details .container .layout {
+            width: 90%;
+            margin: auto;
+      }
+      .details .container .layout p:first-of-type {
+            font-size: 20px;
+      }
+      .details .container .layout p:last-of-type {
+            font-size: 12px;
+      }
+      .details .container .layout .div {
+            flex-wrap: wrap;
+      }
+      .details .container .layout .div > div {
+            width: calc(100% - 25px);
+      }
+      .menu .container {
+            padding: 0;
+      }
+      .menu .container .layout .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+      }
+      .menu .container .layout .div .nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            overflow-x: scroll;
+      }
+      .menu .container .layout .div .nav .nav-link {
+            padding-inline: 50px;
+      }
+      .menu .container .layout .div .nav .nav-link::after {
+            top: unset;
+            left: 50%;
+            bottom: -20px;
+            transform: translate(-50%, 0%);
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link.active::after {
+            bottom: 0;
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link:first-of-type {
+            border-radius: 5px 0 0 5px;
+      }
+      .menu .container .layout .div .nav .nav-link:last-of-type {
+            border-radius: 0 5px 5px 0;
+      }
+      .menu .container .layout .div .nav .nav-link img {
+            width: 50px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group {
+            justify-content: center;
+            padding: 5px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item {
+            width: 50%;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+            padding-left: 15px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+            margin-left: 15px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(1) {
+            transform: translateX(0px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(2) {
+            transform: translateX(15px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(3) {
+            transform: translateX(30px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(4) {
+            transform: translateX(45px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(5) {
+            transform: translateX(60px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+            padding-left: 15px;
+      }
+      .chefs .container .layout {
+            flex-direction: column;
+            gap: 75px;
+      }
+      .chefs .container .layout .chef-item {
+            width: 60%;
+      }
+      .booking .container .layout .form {
+            width: 100%;
+      }
+      .booking .container .layout .delivery {
+            display: none;
+      }
 }
 @media screen and (min-width: 371px) and (max-width: 575.98px) {
-
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+            width: 80%;
+            padding: 0;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+            width: 250px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+            transform: translateY(30px);
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+            width: 80%;
+            font-size: 45px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+            font-size: 12px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+            display: none;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+            display: none;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+            width: 80%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+            font-size: 25px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
+            width: 75%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+            font-size: 12px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+            justify-content: space-between;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+            width: 40px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
+            font-size: 20px;
+      }
+      .Products .col {
+            padding-inline: 20px;
+      }
+      .Products .col .image {
+            width: 35px;
+      }
+      .Products .col p {
+            font-size: 20px;
+      }
+      .about .container .layout {
+            flex-direction: column;
+      }
+      .about .container .layout .div1 {
+            width: 100%;
+      }
+      .about .container .layout .div1 > p:nth-child(2) {
+            font-size: 25px;
+      }
+      .about .container .layout .div1 > p:last-of-type {
+            font-size: 16px;
+      }
+      .about .container .layout .div2 {
+            width: 100%;
+      }
+      .details .container .video {
+            display: none;
+      }
+      .details .container .layout {
+            width: 90%;
+            margin: auto;
+      }
+      .details .container .layout p:first-of-type {
+            font-size: 20px;
+      }
+      .details .container .layout p:last-of-type {
+            font-size: 12px;
+      }
+      .details .container .layout .div {
+            flex-wrap: wrap;
+      }
+      .details .container .layout .div > div {
+            width: calc(100% - 25px);
+      }
+      .menu .container {
+            padding: 0;
+      }
+      .menu .container .layout .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+      }
+      .menu .container .layout .div .nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            overflow-x: scroll;
+      }
+      .menu .container .layout .div .nav .nav-link {
+            padding-inline: 50px;
+      }
+      .menu .container .layout .div .nav .nav-link::after {
+            top: unset;
+            left: 50%;
+            bottom: -20px;
+            transform: translate(-50%, 0%);
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link.active::after {
+            bottom: 0;
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link:first-of-type {
+            border-radius: 5px 0 0 5px;
+      }
+      .menu .container .layout .div .nav .nav-link:last-of-type {
+            border-radius: 0 5px 5px 0;
+      }
+      .menu .container .layout .div .nav .nav-link img {
+            width: 50px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group {
+            justify-content: center;
+            padding: 5px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item {
+            width: 50%;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+            padding-left: 15px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+            margin-left: 15px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(1) {
+            transform: translateX(0px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(2) {
+            transform: translateX(15px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(3) {
+            transform: translateX(30px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(4) {
+            transform: translateX(45px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(5) {
+            transform: translateX(60px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+            padding-left: 15px;
+      }
+      .chefs .container .layout {
+            flex-direction: column;
+            gap: 75px;
+      }
+      .chefs .container .layout .chef-item {
+            width: 60%;
+      }
+      .booking .container .layout .form {
+            width: 100%;
+      }
+      .booking .container .layout .delivery {
+            display: none;
+      }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
       #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
@@ -36,9 +386,124 @@
             width: 100%;
       }
       .Products .col {
-            background: none;
-            background-color: red;
-            width: 10px !important;
+            display: inline;
+            padding-inline: 25px;
+      }
+      .Products .col .image {
+            width: 40px;
+      }
+      .about .container .layout {
+            flex-direction: column;
+      }
+      .about .container .layout .div1 {
+            width: 100%;
+      }
+      .about .container .layout .div1 > p:nth-child(2) {
+            font-size: 25px;
+      }
+      .about .container .layout .div1 > p:last-of-type {
+            font-size: 16px;
+      }
+      .about .container .layout .div2 {
+            width: 100%;
+      }
+      .details .container .video {
+            display: none;
+      }
+      .details .container .layout {
+            width: 90%;
+            margin: auto;
+      }
+      .details .container .layout .div {
+            flex-wrap: wrap;
+      }
+      .details .container .layout .div > div {
+            width: calc(50% - 25px);
+      }
+      .menu .container {
+            padding: 0;
+      }
+      .menu .container .layout .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+      }
+      .menu .container .layout .div .nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: auto;
+      }
+      .menu .container .layout .div .nav .nav-link {
+            width: 125px;
+            padding-bottom: 25px;
+      }
+      .menu .container .layout .div .nav .nav-link::after {
+            top: unset;
+            left: 50%;
+            bottom: -20px;
+            transform: translate(-50%, 0%);
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link.active::after {
+            bottom: 0;
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link:first-of-type {
+            border-radius: 5px 0 0 5px;
+      }
+      .menu .container .layout .div .nav .nav-link:last-of-type {
+            border-radius: 0 5px 5px 0;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group {
+            justify-content: center;
+            padding: 5px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item {
+            width: calc((100% / 2) - 15px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+            padding-left: 15px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+            margin-left: 15px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(1) {
+            transform: translateX(0px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(2) {
+            transform: translateX(15px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(3) {
+            transform: translateX(30px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(4) {
+            transform: translateX(45px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(2) .stars i:nth-child(5) {
+            transform: translateX(60px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+            padding-left: 15px;
+      }
+      .chefs .container .layout {
+            flex-direction: column;
+            gap: 75px;
+      }
+      .chefs .container .layout .chef-item {
+            width: 60%;
+      }
+      .booking .container .layout .form {
+            width: 100%;
+      }
+      .booking .container .layout .delivery {
+            display: none;
       }
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {

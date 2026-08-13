@@ -71,7 +71,6 @@ body header .navbar .container a.btn span {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p,
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption a {
       opacity: 0;
-      transform: scale(0);
       transition-duration: 1s;
       transition-delay: 1s;
 }
@@ -80,26 +79,31 @@ body header .navbar .container a.btn span {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
       color: white;
       opacity: 1;
-      transform: scale(1);
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption h5 {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+      font-size: 0px;
       margin-bottom: 20px;
       font-family: 'DancingScript', cursive;
-      font-size: 65px;
       transition-delay: 250ms;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption p {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption h5 {
+      font-size: 65px;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      font-size: 0px;
       margin: auto;
       margin-bottom: 20px;
       font-family: 'Poppins', cursive;
-      font-size: 14px;
       transition-delay: 500ms;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption p {
+      font-size: 14px;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption a {
+      scale: 0;
       margin: auto;
       padding: 8px 25px;
       display: block;
-      width: fit-content;
       border: 2px solid #f1b601;
       border-radius: 50px;
       color: #f1b601;
@@ -110,6 +114,10 @@ body header .navbar .container a.btn span {
       position: relative;
       transition-delay: 750ms;
       overflow: hidden;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
+      width: fit-content;
+      scale: 1;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a::before {
       content: "";
@@ -315,6 +323,7 @@ body header .navbar .container a.btn span {
       transition-duration: 1s;
       font-size: 30px;
       width: 320px;
+      text-align: start;
       font-weight: bolder;
       color: white;
 }
@@ -461,6 +470,8 @@ section.Products {
       display: flex;
       gap: 2px;
       background-color: white;
+      overflow: hidden;
+      overflow-x: scroll;
 }
 .Products .col {
       padding-block: 20px;
@@ -770,7 +781,6 @@ section.details {
       padding: 25px 10px;
       background: radial-gradient( #2c5364, #203a43, #0f2027);
       color: white;
-      width: 85px;
       border-radius: 0;
       font-family: 'DancingScript', cursive;
       display: flex;
