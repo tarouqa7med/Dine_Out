@@ -137,7 +137,7 @@
             padding: 5px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item {
-            width: 50%;
+            width: 80%;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
             padding-left: 15px;
@@ -315,7 +315,7 @@
             padding: 5px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item {
-            width: 50%;
+            width: 60%;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
             padding-left: 15px;
@@ -547,6 +547,7 @@
       }
       .menu .container .layout .div .nav {
             flex-direction: row;
+            flex-wrap: nowrap;
       }
       .menu .container .layout .div .nav .nav-link::after {
             top: unset;
@@ -560,6 +561,12 @@
             bottom: 0;
             border: 10px solid transparent;
             border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link {
+            padding-inline: 30px;
+      }
+      .menu .container .layout .div .nav .nav-link img {
+            width: 50px;
       }
       .menu .container .layout .div .nav .nav-link:first-of-type {
             border-radius: 5px 0 0 5px;
@@ -599,6 +606,9 @@
       }
       .Products .col .image {
             width: 50px;
+      }
+      .menu .container .layout .div .nav .nav-link img {
+            width: 35px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
             padding-left: 20px;
@@ -664,6 +674,9 @@
       }
       .about .container .layout .div1 ul li div p {
             font-size: 20px;
+      }
+      .menu .container .layout .div .nav .nav-link img {
+            width: 35px;
       }
       .chefs .container .heading {
             scale: 1.25;

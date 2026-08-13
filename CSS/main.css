@@ -26,7 +26,56 @@ body header .navbar .container a.btn span {
       background-color: white;
 }
 .offcanvas {
-      background-color: red;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item a {
+      color: white;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul {
+      list-style-type: none;
+      display: flex;
+      gap: 25px;
+      position: relative;
+      margin-top: 35px;
+      padding: 0;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li {
+      position: absolute;
+      transform: translateX(0);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 10px;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(1) {
+      transform: translateX(0px);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(2) {
+      transform: translateX(60px);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(3) {
+      transform: translateX(120px);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(4) {
+      transform: translateX(180px);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(1) a {
+      color: blue;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(2) a {
+      color: rgb(255, 0, 81);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(3) a {
+      color: green;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(4) a {
+      color: rgb(59, 128, 255);
 }
 #carouselExampleCaptions {
       height: 100vh;
