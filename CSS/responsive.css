@@ -1,0 +1,209 @@
+
+@media screen and (max-width: 370.98px) {
+
+}
+@media screen and (min-width: 371px) and (max-width: 575.98px) {
+
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+            width: 85%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+            width: 80%;
+            padding: 0;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+            width: 80%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+            display: none;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+            display: none;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+            width: 80%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+            justify-content: space-between;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+            width: 65px;
+      }
+      section.Products {
+            width: 125%;
+      }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+            width: 65%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
+            width: 250px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+            font-size: 14px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+            gap: 20px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+            width: 35px;
+      }
+      .Products .col .image {
+            width: 40px;
+      }
+      .about .container .layout .div1 > p:first-of-type {
+            font-size: 25px;
+      }
+      .about .container .layout .div1 > p:nth-child(2) {
+            font-size: 25px;
+      }
+      .about .container .layout .div1 > p:last-of-type {
+            font-size: 16px;
+            padding-right: 15px;
+      }
+      .details .container .video {
+            display: none;
+      }
+      .menu .container .layout .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+      }
+      .menu .container .layout .div .nav {
+            flex-direction: row;
+      }
+      .menu .container .layout .div .nav .nav-link::after {
+            top: unset;
+            left: 50%;
+            bottom: -20px;
+            transform: translate(-50%, 0%);
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link.active::after {
+            bottom: 0;
+            border: 10px solid transparent;
+            border-bottom-color: white;
+      }
+      .menu .container .layout .div .nav .nav-link:first-of-type {
+            border-radius: 5px 0 0 5px;
+      }
+      .menu .container .layout .div .nav .nav-link:last-of-type {
+            border-radius: 0 5px 5px 0;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group {
+            justify-content: start;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item {
+            width: calc((100% / 3) - 15px);
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+            padding-left: 25px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+            margin-left: 25px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+            padding-left: 25px;
+      }
+      .chefs .container .layout .chef-item {
+            width: 200px;
+      }
+      .booking .container .layout .form {
+            width: 50%;
+      }
+      .booking .container .layout .delivery {
+            transform: translateX(-35px);
+            scale: 0.7;
+      }
+}
+@media screen and (min-width: 992px) and (max-width: 1299.98px) {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+            width: 50%;
+      }
+      .Products .col .image {
+            width: 50px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+            padding-left: 20px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+            margin-left: 20px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+            padding-left: 20px;
+      }
+}
+@media screen and (min-width: 1300px) {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+            width: 60%;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption h5 {
+            font-size: 85px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption p {
+            font-size: 20px;
+            margin-bottom: 35px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
+            scale: 1.25;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+            width: 350px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+            font-size: 90px;
+            width: 450px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
+            font-size: 35px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
+            width: 500px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+            font-size: 50px;
+            width: 550px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+            gap: 20px;
+      }
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+            width: 75px;
+      }
+      .about .container .heading h5 {
+            font-size: 45px;
+      }
+      .about .container .heading .image {
+            scale: 1.25;
+      }
+      .about .container .layout .div1 > p:nth-child(2) {
+            font-size: 30px;
+      }
+      .about .container .layout .div1 > p:last-of-type {
+            font-size: 16px;
+      }
+      .about .container .layout .div1 ul li div img {
+            width: 30px;
+      }
+      .about .container .layout .div1 ul li div p {
+            font-size: 20px;
+      }
+      .chefs .container .heading {
+            scale: 1.25;
+      }
+      .chefs .container .layout {
+            gap: 50px;
+      }
+      .chefs .container .layout .chef-item {
+            width: 350px;
+      }
+      .chefs .container .layout .chef-item .details .name-job {
+            width: 110%;
+      }
+}

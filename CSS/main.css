@@ -2,6 +2,7 @@
 body {
       position: relative;
       background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      overflow: hidden;
 }
 body header .navbar {
       height: 75px;
@@ -61,7 +62,9 @@ body header .navbar .container a.btn span {
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: fit-content;
       height: fit-content;
       z-index: 0;
 }
@@ -157,7 +160,7 @@ body header .navbar .container a.btn span {
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
       width: 300px;
-      transform: translateY(-300px);
+      transform: translateY(-1000px);
       transition-duration: 1s;
       position: relative;
       z-index: 1;
@@ -166,7 +169,7 @@ body header .navbar .container a.btn span {
       transform: translateY(35px);
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
-      transform: translateX(-500px);
+      transform: translateX(-1000px);
       transition-duration: 1s;
       font-size: 60px;
       font-weight: bolder;
@@ -252,7 +255,7 @@ body header .navbar .container a.btn span {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
       width: 50%;
       transition-duration: 1s;
-      transform: translateY(-550px);
+      transform: translateY(-1000px);
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div2 {
       transform: translateY(0px);
@@ -289,7 +292,7 @@ body header .navbar .container a.btn span {
       justify-content: start;
       align-items: center;
       flex-direction: column;
-      transform: translateX(-600px) translateY(15px);
+      transform: translateX(-1000px) translateY(15px);
       transition-duration: 1s;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div1 {
@@ -300,7 +303,7 @@ body header .navbar .container a.btn span {
       transition-duration: 1s;
       position: relative;
       z-index: 1;
-      animation: image-top-bottom 1.5s linear 1.5s infinite alternate forwards;;
+      animation: image-top-bottom 1.5s linear 1.5s infinite alternate forwards;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
       width: 50%;
@@ -309,7 +312,7 @@ body header .navbar .container a.btn span {
       justify-content: start;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
-      transform: translateY(-500px);
+      transform: translateY(-1000px);
       transition-duration: 1s;
       font-size: 30px;
       width: 320px;
@@ -333,7 +336,7 @@ body header .navbar .container a.btn span {
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
       font-family: 'Poppins', cursive;
-      font-size: 14px;
+      font-size: 16px;
       text-align: start;
       opacity: 0;
       transform: translateY(100%);
@@ -455,19 +458,25 @@ body header .navbar .container a.btn span {
 }
 
 section.Products {
-      height: 125px;
       padding-block: 1px;
       display: flex;
       gap: 2px;
       background-color: white;
 }
 .Products .col {
+      padding-block: 20px;
       background: radial-gradient( #2c5364, #0f2027);
+}
+.Products .col .image {
+      width: 75px;
+      margin: auto;
 }
 .Products .col p {
       font-family: 'DancingScript', cursive;
       color: white;
       font-size: 25px;
+      margin: 0;
+      margin-top: 10px;
 }
 
 section.about {
@@ -755,6 +764,7 @@ section.details {
       background-color: white;
       border-radius: 6px;
       display: flex;
+      flex-direction: column;
       gap: 1px;
 }
 .menu .container .layout .div .nav .nav-link {
@@ -884,7 +894,7 @@ section.details {
 }
 .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
       margin-left: 50px;
-      gap: 5px;
+      gap: 3px;
       position: relative;
       opacity: 0;
       transition-duration: 1s;
@@ -1076,7 +1086,6 @@ section.booking {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      flex-wrap: wrap;
 }
 .booking .container .layout .form {
       background-image: url("./../attachments/chef-bg.png");
@@ -1174,6 +1183,9 @@ section.booking {
 }
 .booking .container .layout .form form button:hover span {
       color: white;
+}
+.booking .container .layout .delivery {
+      width: 50%;
 }
 .booking .container .layout .delivery img {
       animation: delivery 2.5s linear 0s infinite normal forwards;
