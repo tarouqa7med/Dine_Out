@@ -31,17 +31,38 @@ body header .navbar .container a.btn span {
 .offcanvas .offcanvas-body .navbar-nav .nav-item a {
       color: white;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active.show {
+      opacity: 1;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane {
       list-style-type: none;
-      display: flex;
-      gap: 25px;
       position: relative;
-      margin-top: 35px;
-      padding: 0;
+      transition-duration: 1s;
+      transition-delay: 1s;
+      display: flex;
 }
 .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li {
       position: absolute;
-      transform: translateX(0);
+      transform: translateX(0px);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(1) {
+      transition-duration: 0s;
+      transition-delay: 0s;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(2) {
+      transform: translateX(60px);
+      transition-duration: 500ms;
+      transition-delay: .75s;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(3) {
+      transform: translateX(120px);
+      transition-duration: 1000ms;
+      transition-delay: .5s;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(4) {
+      transform: translateX(180px);
+      transition-duration: 1500ms;
+      transition-delay: .25s;
 }
 .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li a {
       display: flex;
@@ -52,18 +73,6 @@ body header .navbar .container a.btn span {
       height: 40px;
       background-color: white;
       border-radius: 10px;
-}
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(1) {
-      transform: translateX(0px);
-}
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(2) {
-      transform: translateX(60px);
-}
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(3) {
-      transform: translateX(120px);
-}
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(4) {
-      transform: translateX(180px);
 }
 .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(1) a {
       color: blue;
@@ -76,6 +85,10 @@ body header .navbar .container a.btn span {
 }
 .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(4) a {
       color: rgb(59, 128, 255);
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li a i {
+      position: absolute;
+      font-size: 10px;
 }
 #carouselExampleCaptions {
       height: 100vh;
@@ -184,6 +197,7 @@ body header .navbar .container a.btn span {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a span {
       position: relative;
       transition-duration: 1s;
+      color: #f1b601;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a:hover span {
       color: white;
@@ -485,11 +499,6 @@ body header .navbar .container a.btn span {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption a:hover span {
       color: white;
 }
-
-
-
-
-
 
 
 #carouselExampleCaptions .btns {
