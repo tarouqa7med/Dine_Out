@@ -677,6 +677,15 @@
       .menu .container .layout .div .nav .nav-link img {
             width: 35px;
       }
+      .menu .container .layout .div {
+            justify-content: center;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group {
+            justify-content: space-around;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item {
+            width: 20%;
+      }
       .chefs .container .heading {
             scale: 1.25;
       }

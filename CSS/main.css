@@ -31,40 +31,42 @@ body header .navbar .container a.btn span {
 .offcanvas .offcanvas-body .navbar-nav .nav-item a {
       color: white;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active.show {
-      opacity: 1;
-}
 .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane {
+      margin-top: 25px;
       list-style-type: none;
       position: relative;
-      transition-duration: 1s;
-      transition-delay: 1s;
       display: flex;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li {
-      position: absolute;
-      transform: translateX(0px);
-}
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(1) {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li {
       transition-duration: 0s;
       transition-delay: 0s;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(2) {
-      transform: translateX(60px);
-      transition-duration: 500ms;
-      transition-delay: .75s;
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active li {
+      position: absolute;
+      left: 0;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(3) {
-      transform: translateX(120px);
-      transition-duration: 1000ms;
+
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active li:nth-child(1) {
+      left: 0;
+      transition-duration: 0s;
+      transition-delay: 0s;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active li:nth-child(2) {
+      left: 60px;
+      transition-duration: .5s;
+      transition-delay: 1.5s;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active li:nth-child(3) {
+      left: 120px;
+      transition-duration: 1s;
+      transition-delay: 1s;
+}
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane.active li:nth-child(4) {
+      left: 180px;
+      transition-duration: 1.5s;
       transition-delay: .5s;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media li:nth-child(4) {
-      transform: translateX(180px);
-      transition-duration: 1500ms;
-      transition-delay: .25s;
-}
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li a {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -74,19 +76,19 @@ body header .navbar .container a.btn span {
       background-color: white;
       border-radius: 10px;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(1) a {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li:nth-child(1) a {
       color: blue;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(2) a {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li:nth-child(2) a {
       color: rgb(255, 0, 81);
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(3) a {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li:nth-child(3) a {
       color: green;
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li:nth-child(4) a {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li:nth-child(4) a {
       color: rgb(59, 128, 255);
 }
-.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li a i {
+.offcanvas .offcanvas-body .navbar-nav .nav-item.social-media .tab-pane li a i {
       position: absolute;
       font-size: 10px;
 }
@@ -827,16 +829,21 @@ section.details {
 .menu .container .layout {
       margin-top: 35px;
 }
+.menu .container .layout .div {
+      display: flex;
+      justify-content: space-between;
+}
 .menu .container .layout .div .nav {
       padding: 1px;
       background-color: white;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
+      height: fit-content;
       gap: 1px;
 }
 .menu .container .layout .div .nav .nav-link {
-      padding: 25px 10px;
+      padding-block: 25px;
       background: radial-gradient( #2c5364, #203a43, #0f2027);
       color: white;
       border-radius: 0;
@@ -872,7 +879,8 @@ section.details {
       border-radius: 0 0 5px 5px;
 }
 .menu .container .layout .div .nav .nav-link img {
-      width: 65%;
+      margin: 5px;
+      width: 100%;
       transition-duration: 500ms;
 }
 .menu .container .layout .div .nav .nav-link.active img {
