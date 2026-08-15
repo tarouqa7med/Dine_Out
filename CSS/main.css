@@ -899,7 +899,7 @@ section.details {
       gap: 20px;
 }
 .menu .container .layout .div .tab-content .tab-pane .group .item {
-      width: calc(25% - 15px);
+      width: calc(20% - 15px);
       color: white;
       border: 3px solid #f1b601;
       border-radius: 10px;
