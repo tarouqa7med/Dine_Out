@@ -9,3 +9,7 @@ html::-webkit-scrollbar-thumb {
       background: #f1b601;
       border-radius: 10px;
 }
+body {
+      position: relative;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}

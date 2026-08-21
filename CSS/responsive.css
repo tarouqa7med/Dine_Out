@@ -1,47 +1,63 @@
 
 @media screen and (max-width: 370.98px) {
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+            width: 100% !important;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+            width: 100%;
+            font-size: 40px;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            font-size: 12px;
+            width: 90%;
+            margin-bottom: 10px;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
+            scale: 0.75;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
             width: 80%;
             padding: 0;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
             width: 250px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
             transform: translateY(30px);
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             width: 80%;
             font-size: 45px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
             font-size: 12px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
             display: none;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
             display: none;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
             width: 80%;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
             font-size: 25px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
             width: 75%;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
             font-size: 12px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             justify-content: space-between;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 40px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
             font-size: 20px;
       }
       .Products .col {
@@ -53,20 +69,36 @@
       .Products .col p {
             font-size: 20px;
       }
+      .about .container .heading .image {
+            scale: 0.8;
+      }
       .about .container .layout {
             flex-direction: column;
       }
       .about .container .layout .div1 {
             width: 100%;
       }
+      .about .container .layout .div1 > p:first-of-type {
+            font-size: 24px;
+      }
       .about .container .layout .div1 > p:nth-child(2) {
-            font-size: 25px;
+            font-size: 18px;
       }
       .about .container .layout .div1 > p:last-of-type {
-            font-size: 16px;
+            font-size: 12px;
+      }
+      .about .container .layout .div1 ul li div p {
+            margin-left: 5px;
       }
       .about .container .layout .div2 {
             width: 100%;
+            height: 200px;
+      }
+      .details .container {
+            background: linear-gradient(#000000bb), url("./../attachments/video_image-min.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
       }
       .details .container .video {
             display: none;
@@ -75,17 +107,18 @@
             width: 90%;
             margin: auto;
       }
-      .details .container .layout p:first-of-type {
+      .details .container .layout .container-fluid > p:first-of-type {
             font-size: 20px;
       }
-      .details .container .layout p:last-of-type {
+      .details .container .layout .container-fluid p:last-of-type {
             font-size: 12px;
       }
-      .details .container .layout .div {
+      .details .container .layout .container-fluid .div {
             flex-wrap: wrap;
       }
-      .details .container .layout .div > div {
-            width: calc(100% - 25px);
+      .details .container .layout .container-fluid .div > div {
+            width: 100%;
+            max-width: 280px;
       }
       .menu .container {
             padding: 0;
@@ -109,6 +142,7 @@
       }
       .menu .container .layout .div .nav .nav-link {
             padding-inline: 50px;
+            height: 100px;
       }
       .menu .container .layout .div .nav .nav-link::after {
             top: unset;
@@ -130,14 +164,15 @@
             border-radius: 0 5px 5px 0;
       }
       .menu .container .layout .div .nav .nav-link img {
-            width: 50px;
+            width: 35px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group {
             justify-content: center;
             padding: 5px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item {
-            width: 80%;
+            width: 90%;
+            max-width: 275px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
             padding-left: 15px;
@@ -168,7 +203,7 @@
             gap: 75px;
       }
       .chefs .container .layout .chef-item {
-            width: 60%;
+            width: 280px;
       }
       .booking .container .layout .form {
             width: 100%;
@@ -176,50 +211,65 @@
       .booking .container .layout .delivery {
             display: none;
       }
+      footer p {
+            font-size: 12px;
+      }
 }
 @media screen and (min-width: 371px) and (max-width: 575.98px) {
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+            width: 100% !important;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+            width: 100%;
+            font-size: 50px;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            font-size: 14px;
+            width: 90%;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
             width: 80%;
             padding: 0;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
             width: 250px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
             transform: translateY(30px);
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             width: 80%;
             font-size: 45px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
             font-size: 12px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
             display: none;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
             display: none;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
             width: 80%;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
             font-size: 25px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
             width: 75%;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
             font-size: 12px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             justify-content: space-between;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 40px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
             font-size: 20px;
       }
       .Products .col {
@@ -231,20 +281,36 @@
       .Products .col p {
             font-size: 20px;
       }
+      .about .container .heading .image {
+            scale: 0.8;
+      }
       .about .container .layout {
             flex-direction: column;
       }
       .about .container .layout .div1 {
             width: 100%;
       }
+      .about .container .layout .div1 > p:first-of-type {
+            font-size: 24px;
+      }
       .about .container .layout .div1 > p:nth-child(2) {
-            font-size: 25px;
+            font-size: 22px;
       }
       .about .container .layout .div1 > p:last-of-type {
-            font-size: 16px;
+            font-size: 12px;
+      }
+      .about .container .layout .div1 ul li div p {
+            margin-left: 5px;
+            font-size: 18px;
       }
       .about .container .layout .div2 {
             width: 100%;
+      }
+      .details .container {
+            background: linear-gradient(#000000bb), url("./../attachments/video_image-min.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
       }
       .details .container .video {
             display: none;
@@ -253,17 +319,19 @@
             width: 90%;
             margin: auto;
       }
-      .details .container .layout p:first-of-type {
+      .details .container .layout .container-fluid > p:first-of-type {
             font-size: 20px;
       }
-      .details .container .layout p:last-of-type {
+      .details .container .layout .container-fluid > p:last-of-type {
             font-size: 12px;
       }
-      .details .container .layout .div {
+      .details .container .layout .container-fluid > .div {
             flex-wrap: wrap;
+            justify-content: center;
       }
-      .details .container .layout .div > div {
-            width: calc(100% - 25px);
+      .details .container .layout .container-fluid > .div > div {
+            width: 100%;
+            max-width: 280px;
       }
       .menu .container {
             padding: 0;
@@ -315,7 +383,7 @@
             padding: 5px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item {
-            width: 60%;
+            width: 280px;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
             padding-left: 15px;
@@ -346,7 +414,7 @@
             gap: 75px;
       }
       .chefs .container .layout .chef-item {
-            width: 60%;
+            width: 280px;
       }
       .booking .container .layout .form {
             width: 100%;
@@ -356,29 +424,34 @@
       }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-            width: 85%;
+
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+            font-size: 60px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            font-size: 14px;
+            width: 400px;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
             width: 80%;
             padding: 0;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             width: 80%;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
             display: none;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
             display: none;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
             width: 80%;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             justify-content: space-between;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 65px;
       }
       section.Products {
@@ -403,6 +476,9 @@
       .about .container .layout .div1 > p:last-of-type {
             font-size: 16px;
       }
+      .about .container .layout .div1 ul li div p {
+            margin-left: 5px;
+      }
       .about .container .layout .div2 {
             width: 100%;
       }
@@ -413,11 +489,20 @@
             width: 90%;
             margin: auto;
       }
-      .details .container .layout .div {
+      .details .container {
+            background: linear-gradient(#000000bb), url("./../attachments/video_image-min.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+      }
+      .details .container .layout .container-fluid > .div {
             flex-wrap: wrap;
       }
-      .details .container .layout .div > div {
+      .details .container .layout .container-fluid > .div > div {
             width: calc(50% - 25px);
+      }
+      .details .container .layout .container-fluid > .div > div h4 {
+            font-size: 22px;
       }
       .menu .container {
             padding: 0;
@@ -506,19 +591,24 @@
       }
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-            width: 65%;
+
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+            font-size: 70px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            font-size: 14px;
+            width: 450px;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
             width: 250px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
             font-size: 14px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             gap: 20px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 35px;
       }
       .Products .col .image {
@@ -534,8 +624,11 @@
             font-size: 16px;
             padding-right: 15px;
       }
-      .details .container .video {
-            display: none;
+      .details .container .layout .container-fluid > .div > div .image7 {
+            width: 50px;
+      }
+      .details .container .layout .container-fluid > .div > div h4 {
+            font-size: 16px;
       }
       .menu .container .layout .div {
             display: flex;
@@ -600,14 +693,22 @@
       }
 }
 @media screen and (min-width: 992px) and (max-width: 1299.98px) {
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-            width: 50%;
+
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+            font-size: 70px;
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            font-size: 14px;
+            width: 550px;
       }
       .Products .col .image {
             width: 50px;
       }
       .menu .container .layout .div .nav .nav-link img {
             width: 35px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item {
+            width: 23%;
       }
       .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
             padding-left: 20px;
@@ -619,41 +720,35 @@
             padding-left: 20px;
       }
 }
-@media screen and (min-width: 1300px) {
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
-            width: 60%;
+@media screen and (min-width: 1300px) and (max-width: 1399.98px) {
+
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            width: 550px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption h5 {
-            font-size: 85px;
-      }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption p {
-            font-size: 20px;
-            margin-bottom: 35px;
-      }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
-            scale: 1.25;
-      }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
             width: 350px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+            transform: translateY(50px);
+      }
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             font-size: 90px;
             width: 450px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
             font-size: 35px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
             width: 500px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
             font-size: 50px;
             width: 550px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             gap: 20px;
       }
-      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 75px;
       }
       .about .container .heading h5 {
@@ -677,6 +772,9 @@
       .menu .container .layout .div .nav .nav-link img {
             width: 35px;
       }
+      .menu .container .layout .div .tab-content .tab-pane .group .item {
+            width: 23%;
+      }
       .menu .container .layout .div {
             justify-content: center;
       }
@@ -684,7 +782,16 @@
             justify-content: space-around;
       }
       .menu .container .layout .div .tab-content .tab-pane.active.show .group .item {
-            width: 20%;
+            max-width: 24%;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(1) p:last-of-type {
+            padding-left: 20px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane .group .item ul li:nth-child(2) .stars {
+            margin-left: 20px;
+      }
+      .menu .container .layout .div .tab-content .tab-pane.active.show .group .item ul li:nth-child(3) p:last-of-type {
+            padding-left: 20px;
       }
       .chefs .container .heading {
             scale: 1.25;
@@ -694,6 +801,18 @@
       }
       .chefs .container .layout .chef-item {
             width: 350px;
+      }
+}
+@media screen and (min-width: 1400px) {
+      
+      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+            width: 550px;
+      }
+      .menu .container .layout .div .nav .nav-link img {
+            width: 35px;
+      }
+      .chefs .container .layout .chef-item {
+            width: 320px;
       }
       .chefs .container .layout .chef-item .details .name-job {
             width: 110%;
