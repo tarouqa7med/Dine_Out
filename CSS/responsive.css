@@ -1,63 +1,63 @@
 
 @media screen and (max-width: 370.98px) {
 
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
             width: 100% !important;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
             width: 100%;
             font-size: 40px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             font-size: 12px;
             width: 90%;
             margin-bottom: 10px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1).active .carousel-caption a {
             scale: 0.75;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
             width: 80%;
             padding: 0;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
             width: 250px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
             transform: translateY(30px);
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             width: 80%;
             font-size: 45px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
             font-size: 12px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
             display: none;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
             display: none;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
             width: 80%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
             font-size: 25px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
             width: 75%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
             font-size: 12px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             justify-content: space-between;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 40px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
             font-size: 20px;
       }
       .Products .col {
@@ -217,59 +217,59 @@
 }
 @media screen and (min-width: 371px) and (max-width: 575.98px) {
 
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
             width: 100% !important;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
             width: 100%;
             font-size: 50px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             font-size: 14px;
             width: 90%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
             width: 80%;
             padding: 0;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
             width: 250px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
             transform: translateY(30px);
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             width: 80%;
             font-size: 45px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:first-of-type {
             font-size: 12px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
             display: none;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
             display: none;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
             width: 80%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
             font-size: 25px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3).active .carousel-caption .div2 hr {
             width: 75%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
             font-size: 12px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             justify-content: space-between;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 40px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
             font-size: 20px;
       }
       .Products .col {
@@ -425,33 +425,33 @@
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
 
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
             font-size: 60px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             font-size: 14px;
             width: 400px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 {
             width: 80%;
             padding: 0;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             width: 80%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div2 {
             display: none;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 {
             display: none;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 {
             width: 80%;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             justify-content: space-between;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 65px;
       }
       section.Products {
@@ -592,23 +592,23 @@
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
 
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
             font-size: 70px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             font-size: 14px;
             width: 450px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
             width: 250px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 > p {
             font-size: 14px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             gap: 20px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 35px;
       }
       .Products .col .image {
@@ -694,10 +694,10 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1299.98px) {
 
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
             font-size: 70px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             font-size: 14px;
             width: 550px;
       }
@@ -722,33 +722,33 @@
 }
 @media screen and (min-width: 1300px) and (max-width: 1399.98px) {
 
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             width: 550px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 img {
             width: 350px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2).active .carousel-caption .div1 img {
             transform: translateY(50px);
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 h5 {
             font-size: 90px;
             width: 450px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2) .carousel-caption .div1 p:last-of-type {
             font-size: 35px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div1 img {
             width: 500px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 h5 {
             font-size: 50px;
             width: 550px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul {
             gap: 20px;
       }
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div img {
             width: 75px;
       }
       .about .container .heading h5 {
@@ -805,7 +805,7 @@
 }
 @media screen and (min-width: 1400px) {
       
-      header .navbar #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
+      #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption p {
             width: 550px;
       }
       .menu .container .layout .div .nav .nav-link img {
