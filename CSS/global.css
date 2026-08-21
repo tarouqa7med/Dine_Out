@@ -2,14 +2,21 @@
 html::-webkit-scrollbar {
       width: 20px;
 }
-html::-webkit-scrollbar-track {
-      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-}
-html::-webkit-scrollbar-thumb {
-      background: #f1b601;
-      border-radius: 10px;
-}
 body {
       position: relative;
       background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      perspective: 600px;
+}
+body::-webkit-scrollbar {
+      width: 16px;
+      background: #1fb5f6;
+      background: -webkit-linear-gradient(to right,#1aa1db,#203a43,#0f2027);
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+body::-webkit-scrollbar-thumb {
+      background-color: #f1b601;
+      border-radius: 16px;
+      box-shadow: 2px 2px 2px #ffffff40 inset,
+                        -2px -2px 2px #00000040 inset;
+
 }

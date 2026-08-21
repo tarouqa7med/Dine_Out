@@ -124,8 +124,6 @@ header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item.socia
 header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul li a:hover i {
       color: #f1b601;
 }
-
-
 header .navbar .container > a.btn-primary {
       background-color: transparent;
       border: none;
@@ -135,6 +133,9 @@ header .navbar .container > a.btn-primary {
       justify-content: center;
       align-items: center;
       gap: 8px;
+}
+header .navbar .container > a.btn-primary:focus {
+      box-shadow: none;
 }
 header .navbar .container > a.btn-primary span {
       width: 35px;
