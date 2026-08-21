@@ -36,7 +36,7 @@ header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item a {
       color: white;
       font-family: 'Poppins', cursive;
       letter-spacing: 2px;
-      width: max-content;
+      width: 100%;
       transition-duration: 500ms;
 }
 header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item:not(:last-of-type):hover a {
@@ -45,7 +45,6 @@ header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item:not(:
 }
 header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media {
       margin-top: 30px;
-      background-color: red;
 }
 header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item.social-media ul {
       padding: 0;
