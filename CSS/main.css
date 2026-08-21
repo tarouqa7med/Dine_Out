@@ -7,21 +7,6 @@ header .navbar {
 header .navbar .container a img {
       width: 100%;
 }
-header .navbar .container a.btn {
-      background-color: transparent;
-      border: none;
-      width: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-}
-header .navbar .container a.btn span {
-      width: 35px;
-      height: 2px;
-      background-color: white;
-}
 header .navbar .container .offcanvas {
       padding: 10px;
       background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
@@ -141,62 +126,34 @@ header .navbar .container .offcanvas .offcanvas-body .navbar-nav .nav-item.socia
 }
 
 
-/* =========================
-   MENU BUTTON
-========================= */
-
-.btn-primary {
-    width: 45px;
-    height: 45px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 5px;
+header .navbar .container > a.btn-primary {
+      background-color: transparent;
+      border: none;
+      width: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
 }
-
-
-/* =========================
-   SPANS
-========================= */
-
-.btn-primary span {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-
-    display: block;
-
-    transition:
-        transform 0.35s ease,
-        opacity 0.25s ease;
+header .navbar .container > a.btn-primary span {
+      width: 35px;
+      height: 2px;
+      display: block;
+      background-color: white;
+      transition:
+            transform 500ms linear,
+            opacity 500ms linear;
 }
-
-
-/* =========================
-   OFFCANVAS OPEN
-========================= */
-
-/* First span */
 body:has(.offcanvas.show) .btn-primary span:first-child {
-    transform: translateY(10px) rotate(45deg);
+      transform: translateY(10px) rotate(45deg);
 }
-
-
-/* Middle span */
 body:has(.offcanvas.show) .btn-primary span:nth-child(2) {
-    opacity: 0;
-
-    /* اختياري عشان يختفي بسلاسة */
-    transform: translateY(-10px);
+      opacity: 0;
+      transform: translateY(-10px);
 }
-
-
-/* Last span */
 body:has(.offcanvas.show) .btn-primary span:last-child {
-    transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(-10px) rotate(-45deg);
 }
 
 
