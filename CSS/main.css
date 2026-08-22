@@ -212,7 +212,7 @@ body:has(.offcanvas.show) .btn-primary span:last-child {
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(1) .carousel-caption h5 {
       font-size: 90px;
       margin-bottom: 20px;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       scale: 0;
       transition-delay: 250ms;
 }
@@ -526,7 +526,7 @@ body:has(.offcanvas.show) .btn-primary span:last-child {
       margin-bottom: 20px;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption .div2 .ul ul li div p {
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 25px;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3) .carousel-caption a {
@@ -609,7 +609,7 @@ section.Products {
       margin: auto;
 }
 .Products .col p {
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       color: white;
       font-size: 25px;
       margin: 0;
@@ -627,7 +627,7 @@ section.about {
 .about .container .heading p {
       margin: 0;
       color: #f1b601;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 24px;
 }
 .about .container .heading h5 {
@@ -669,7 +669,7 @@ section.about {
 .about .container .layout .div1 > p:first-of-type {
       margin: 0;
       color: #f1b601;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 30px;
 }
 .about .container .layout .div1 > p:nth-child(2) {
@@ -709,7 +709,7 @@ section.about {
       display: inline;
       margin-left: 15px;
       color: white;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
 }
 .about .container .layout .div1 a {
       padding: 8px 25px;
@@ -769,7 +769,7 @@ section.about {
 }
 .about .container .layout .div2 p {
       font-size: 32px;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       position: relative;
 }
 
@@ -802,7 +802,7 @@ section.details {
 }
 .details .container .layout .container-fluid > p:first-of-type {
       font-size: 35px;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
 }
 .details .container .layout .container-fluid > hr {
       height: 4px;
@@ -850,7 +850,7 @@ section.details {
 }
 .details .container .layout .container-fluid > .div > div h4 {
       font-size: 20px;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
 }
 
 
@@ -865,7 +865,7 @@ section.details {
 .menu .container .heading p {
       margin: 0;
       color: #f1b601;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 24px;
 }
 .menu .container .heading h5 {
@@ -914,7 +914,7 @@ section.details {
       background: radial-gradient( #2c5364, #203a43, #0f2027);
       color: white;
       border-radius: 0;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1004,7 +1004,7 @@ section.details {
       transform: scale(100%);
 }
 .menu .container .layout .div .tab-content .tab-pane .group .item h3 {
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       margin-bottom: 20px;
       opacity: 0;
       scale: 0;
@@ -1098,7 +1098,7 @@ section.chefs {
 .chefs .container .heading p {
       margin: 0;
       color: #f1b601;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 24px;
 }
 .chefs .container .heading h5 {
@@ -1177,7 +1177,7 @@ section.chefs {
 }
 .chefs .container .layout .chef-item .details .name-job p {
       color: #C1C1C1;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
 }
 .chefs .container .layout .chef-item:hover .details .name-job * {
       color: white;
@@ -1199,7 +1199,7 @@ section.booking {
 .booking .container .heading p {
       margin: 0;
       color: #f1b601;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 24px;
 }
 .booking .container .heading h5 {
@@ -1245,7 +1245,7 @@ section.booking {
 }
 .booking .container .layout .form p {
       color: #f1b601;
-      font-family: 'DancingScript', cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 30px;
 }
 .booking .container .layout .form form {
