@@ -684,6 +684,9 @@
       .chefs .container .layout .chef-item {
             width: 200px;
       }
+      .chefs .container .layout .chef-item .details .name-job h4 {
+            font-size: 15px;
+      }
       .booking .container .layout .form {
             width: 50%;
       }
